@@ -25,8 +25,8 @@ public class PeopleController {
     }
 
     // BEGIN
-    @GetMapping(path = "/")
-    public List<Map<String, Object>> showPersons() {
+    @GetMapping(path = "")
+    public List<Map<String, Object>> getPersons() {
         return jdbc.queryForList("SELECT * FROM person");
     }
 
